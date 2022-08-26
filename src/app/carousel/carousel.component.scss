@@ -1,0 +1,22 @@
+/* slides.component.scss */
+
+@import "~swiper/swiper.min.css";
+@import "~swiper/modules/navigation/navigation.min.css";
+@import "~swiper/modules/pagination/pagination.min.css";
+
+.my-swiper {
+  height: 200px;
+  background: aqua;
+}
+
+.swiper-slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  height: 200px;
+  max-width: 100px;
+  margin: auto;
+  border-radius: 20px;
+}

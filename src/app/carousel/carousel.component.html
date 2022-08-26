@@ -1,0 +1,20 @@
+<swiper
+  [slidesPerView]="3"
+  [spaceBetween]="30"
+  [slidesPerGroup]="3"
+  [loop]="true"
+  [loopFillGroupWithBlank]="true"
+  [pagination]="{
+    clickable: true
+  }"
+  [navigation]="true"
+  class="my-swiper"
+>
+  <ng-template swiperSlide *ngFor="let slide of slides$ | async; index as i">
+    <div class="swiper-slide-container">
+      <mat-card>
+        {{ slide }}
+      </mat-card>
+    </div>
+  </ng-template>
+</swiper>
